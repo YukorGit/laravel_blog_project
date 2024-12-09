@@ -33,7 +33,7 @@
                             <input type="text" class="form-control" name="title" placeholder="Название категории"
                             value="{{ $category->title }}">
                             @error('title')
-                            <div class="text-danger">Это поле необходимо для заполнения {{ $message }}</div>
+                            <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <input type="submit" class="btn btn-primary" value="Обновить">
